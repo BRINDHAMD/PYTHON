@@ -36,6 +36,31 @@ num = 20
 print(num)
 ans:20
 
+#LOCAL VAIABLE
+def order():
+    food = 'curd rice'
+    print('your order is:',food)
+order()
+#ENCLOSING VARIABLE
+def card():
+    discount = 10
+    def checkout():
+        print('applying discount:',discount)
+    checkout()
+card()
+#GLOBAL VARIABLE
+user_id = 'yahoo'
+def homepage():
+    print('welcome:',user_id)
+def profile():
+    print('welcome to profile page:',user_id)
+homepage()
+profile()
+  Ans:your order is: curd rice
+           applying discount: 10
+           welcome: yahoo
+           welcome to profile page: yahoo
+
 # type conversion
 x =1
 y = 5.1
